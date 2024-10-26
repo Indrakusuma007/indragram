@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "58210214517",
+    "project_id": "indragram-3fb69",
+    "storage_bucket": "indragram-3fb69.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58210214517:android:5e30b0cb8e6afdb4970e3c",
+        "android_client_info": {
+          "package_name": "com.android.indragram"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_rI5HbIgBOTEXz31vg6GpOG_iexrYF7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58210214517:android:cde1d32a6ca09bbe970e3c",
+        "android_client_info": {
+          "package_name": "com.example.indragram"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_rI5HbIgBOTEXz31vg6GpOG_iexrYF7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
