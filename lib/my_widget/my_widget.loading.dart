@@ -22,7 +22,7 @@ class MyWidgetLoading extends StatelessWidget {
                       width: MediaQuery.of(context).size.width,
                       height: MediaQuery.of(context).size.height,
                       decoration: BoxDecoration(color: Colors.grey.shade200.withOpacity(.7)),
-                      child: Center(child: Text(percent != null ? 'Loading (${percent}%)' : 'Loading..', style: TextStyle(fontWeight: FontWeight.bold))))
+                      child: Center(child: Text(percent != null ? 'Loading ($percent%)' : 'Loading..', style: TextStyle(fontWeight: FontWeight.bold))))
                   : Container()
             ],
           ),
