@@ -36,7 +36,7 @@ class RegisterScreen extends GetView<RegisterController> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text('Foodgram', style: TextStyle(fontSize: 45, fontFamily: 'Instagram')),
+                          Image.asset('assets/images/foodgram_logo.png', height: 100),
                           Column(
                             children: [
                               // 082133651063

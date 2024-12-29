@@ -25,7 +25,7 @@ class LoginScreen extends GetView<LoginController> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text('Foodgram', style: TextStyle(fontSize: 45, fontFamily: 'Instagram')),
+                        Image.asset('assets/images/foodgram_logo.png', height: 100),
                         SizedBox(height: 40.0),
                         MyWidgetInput(hint: 'Nomor hp. Cth: 082983892009', keyboardType: TextInputType.number, ctr: controller.ctrUsername.value),
                         SizedBox(height: 10.0),
