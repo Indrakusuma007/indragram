@@ -17,17 +17,30 @@ class HomeScreen extends GetView<HomeController> {
         child: Scaffold(
           appBar: AppBar(
             title: const Text(
-              'Indragram',
+              'Foodgram',
               style: TextStyle(fontFamily: 'Instagram'),
             ),
             centerTitle: true,
+            /*
+            leading: IconButton(
+              icon: Icon(Icons.shopping_cart_outlined),
+              onPressed: () {
+                Get.offAllNamed(Routes.CART);
+              },
+            ),
+            */
             actions: [
               IconButton(
                   onPressed: () {
                     Get.offAllNamed(Routes.LOGIN);
                   },
                   icon: Icon(Icons.logout_outlined)),
-              SizedBox(width: 3.0)
+              SizedBox(width: 3.0),
+              IconButton(
+                  onPressed: () {
+                    Get.offAllNamed(Routes.CART);
+                  },
+                  icon: Icon(Icons.shopping_cart_outlined)),
             ],
           ),
           backgroundColor: Colors.white,

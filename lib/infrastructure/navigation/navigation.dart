@@ -42,6 +42,11 @@ class Nav {
       binding: RegisterControllerBinding(),
     ),
     GetPage(
+      name: Routes.CART,
+      page: () => const CartScreen(),
+      binding: CartControllerBinding(),
+    ),
+    GetPage(
       name: Routes.FORGET_PASSWORD,
       page: () => const ForgetPasswordScreen(),
       binding: ForgetPasswordControllerBinding(),

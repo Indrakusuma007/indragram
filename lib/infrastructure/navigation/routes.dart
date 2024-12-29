@@ -4,6 +4,7 @@ class Routes {
     return LOGIN;
   }
 
+  static const CART = '/cart';
   static const HOME = '/home';
   static const LOGIN = '/login';
   static const REGISTER = '/register';
