@@ -1,7 +1,4 @@
 import 'package:get/get.dart';
-import 'package:flutter/material.dart';
-
-import 'package:indragram/my_widget/my_widget.snackbar.dart';
 
 class CartController extends GetxController {
   // Example properties for the cart
