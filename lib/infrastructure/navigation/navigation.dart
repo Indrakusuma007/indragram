@@ -48,7 +48,7 @@ class Nav {
     ),
     GetPage(
       name: Routes.FORGET_PASSWORD,
-      page: () => const ForgetPasswordScreen(),
+      page: () => ForgetPasswordScreen(),
       binding: ForgetPasswordControllerBinding(),
     ),
   ];

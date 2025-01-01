@@ -92,7 +92,7 @@ class RegisterScreen extends GetView<RegisterController> {
                             child: Row(
                               children: [
                                 Text('Created By ', style: TextStyle(color: Colors.grey, fontWeight: FontWeight.w500, fontSize: 12.0)),
-                                Text('Muh. Indra', style: TextStyle(color: Colors.grey, fontWeight: FontWeight.w700, fontSize: 12.0)),
+                                Text('KuzmaTech', style: TextStyle(color: Colors.grey, fontWeight: FontWeight.w700, fontSize: 12.0)),
                               ],
                             )),
                         Expanded(child: Divider(thickness: 1, color: Colors.grey.shade300)),

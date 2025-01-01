@@ -8,5 +8,6 @@ class Routes {
   static const HOME = '/home';
   static const LOGIN = '/login';
   static const REGISTER = '/register';
+  static const VERIFY_OTP = '/verify-otp';
   static const FORGET_PASSWORD = '/forget-password';
 }
