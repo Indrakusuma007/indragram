@@ -21,26 +21,20 @@ class HomeScreen extends GetView<HomeController> {
               style: TextStyle(fontFamily: 'Instagram'),
             ),
             centerTitle: true,
-            /*
             leading: IconButton(
-              icon: Icon(Icons.shopping_cart_outlined),
+              icon: Icon(Icons.logout_outlined),
               onPressed: () {
-                Get.offAllNamed(Routes.CART);
+                Get.offAllNamed(Routes.LOGIN);
               },
             ),
-            */
             actions: [
               IconButton(
-                  onPressed: () {
-                    Get.offAllNamed(Routes.LOGIN);
-                  },
-                  icon: Icon(Icons.logout_outlined)),
+                onPressed: () {
+                  Get.toNamed(Routes.CART);
+                },
+                icon: Icon(Icons.shopping_cart_outlined),
+              ),
               SizedBox(width: 3.0),
-              IconButton(
-                  onPressed: () {
-                    Get.offAllNamed(Routes.CART);
-                  },
-                  icon: Icon(Icons.shopping_cart_outlined)),
             ],
           ),
           backgroundColor: Colors.white,

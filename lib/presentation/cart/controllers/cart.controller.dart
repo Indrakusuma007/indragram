@@ -1,52 +1,20 @@
 import 'package:get/get.dart';
 
 class CartController extends GetxController {
-  // Example properties for the cart
-  final CartController cartController = Get.find<CartController>();
-  final RxList<String> items = <String>[].obs;
-  final RxDouble totalPrice = 0.0.obs;
+  var items = <Map<String, dynamic>>[].obs;
 
-  @override
-  void onInit() {
-    super.onInit();
-    // Initialize the cart with some data if needed
-    fetchCartItems();
-  }
-
-  @override
-  void onReady() {
-    super.onReady();
-  }
-
-  @override
-  void onClose() {
-    super.onClose();
-  }
-
-  // Example method to fetch cart items
-  void fetchCartItems() {
-    // Fetch items from a service or database
-    // For now, let's add some dummy items
-    items.addAll(['Item 1', 'Item 2', 'Item 3']);
-    calculateTotalPrice();
-  }
-
-  // Example method to calculate total price
-  void calculateTotalPrice() {
-    // Calculate the total price of items in the cart
-    // For now, let's assume each item costs 10.0
-    totalPrice.value = items.length * 10.0;
-  }
-
-  // Example method to add an item to the cart
-  void addItem(String item) {
+  void addToCart(Map<String, dynamic> item) {
     items.add(item);
-    calculateTotalPrice();
+    Get.snackbar('Berhasil', '${item['name']} berhasil ditambahkan ke keranjang');
   }
 
-  // Example method to remove an item from the cart
-  void removeItem(String item) {
+  void removeFromCart(Map<String, dynamic> item) {
     items.remove(item);
-    calculateTotalPrice();
+    Get.snackbar('Berhasil', '${item['name']} berhasil dihapus dari keranjang');
+  }
+
+  void clearCart() {
+    items.clear();
+    Get.snackbar('Berhasil', 'Keranjang berhasil dikosongkan');
   }
 }
