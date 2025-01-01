@@ -6,6 +6,7 @@ import 'infrastructure/navigation/navigation.dart';
 import 'infrastructure/navigation/routes.dart';
 import 'firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:indragram/presentation/cart/controllers/cart.controller.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -13,6 +14,7 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   var initialRoute = await Routes.initialRoute;
+  Get.put<CartController>(CartController());
   runApp(Main(initialRoute));
 }
 
