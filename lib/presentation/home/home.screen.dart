@@ -34,6 +34,12 @@ class HomeScreen extends GetView<HomeController> {
                 },
                 icon: Icon(Icons.shopping_cart_outlined),
               ),
+              IconButton(
+                onPressed: () {
+                  Get.toNamed(Routes.PROFILE);
+                },
+                icon: Icon(Icons.person_outline),
+              ),
               SizedBox(width: 3.0),
             ],
           ),

@@ -120,7 +120,7 @@ class HomeContent extends GetView<HomeController> {
                     child: ElevatedButton(
                       onPressed: () {
                         // Tambahkan item ke keranjang saat 'Beli sekarang' diklik
-                        cartController.addToCart(name, photoUrl ?? '');
+                        cartController.addToCart(name, photoUrl ?? '', harga);
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: colorList[random.nextInt(colorList.length)],

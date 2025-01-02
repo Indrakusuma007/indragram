@@ -51,5 +51,10 @@ class Nav {
       page: () => ForgetPasswordScreen(),
       binding: ForgetPasswordControllerBinding(),
     ),
+    GetPage(
+      name: Routes.PROFILE,
+      page: () => const ProfileScreen(),
+      binding: ProfileControllerBinding(),
+    ),
   ];
 }

@@ -3,3 +3,4 @@ export 'package:indragram/infrastructure/navigation/bindings/controllers/home.co
 export 'package:indragram/infrastructure/navigation/bindings/controllers/login.controller.binding.dart';
 export 'package:indragram/infrastructure/navigation/bindings/controllers/register.controller.binding.dart';
 export 'package:indragram/infrastructure/navigation/bindings/controllers/cart.controller.binding.dart';
+export 'package:indragram/infrastructure/navigation/bindings/controllers/profile.controller.binding.dart';

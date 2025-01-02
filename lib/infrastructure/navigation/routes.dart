@@ -10,4 +10,5 @@ class Routes {
   static const REGISTER = '/register';
   static const VERIFY_OTP = '/verify-otp';
   static const FORGET_PASSWORD = '/forget-password';
+  static const PROFILE = '/profile';
 }
