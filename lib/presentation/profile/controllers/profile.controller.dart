@@ -3,8 +3,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:indragram/my_widget/my_widget.snackbar.dart';
 
 class ProfileController extends GetxController {
-  var phoneNumber = 'User'.obs;
   var userDocId = ''.obs;
+  var profilePictureUrl = ''.obs;
+  var username = ''.obs;
 
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
@@ -15,17 +16,25 @@ class ProfileController extends GetxController {
   }
 
   void _loadUserProfile() async {
-    // Ganti dengan nomor telepon pengguna yang sedang login
-    String currentPhoneNumber = '082133651063'; // Contoh nomor telepon
+    // Ganti dengan mekanisme yang sesuai untuk mendapatkan username pengguna
+    String currentUsername = '1'; // Contoh username
+    print('Current Username: $currentUsername');
 
-    QuerySnapshot userDocs = await _firestore.collection('data_users').where('username', isEqualTo: currentPhoneNumber).get();
-    if (userDocs.docs.isNotEmpty) {
-      var userDoc = userDocs.docs.first;
-      phoneNumber.value = userDoc['username'];
-      userDocId.value = userDoc.id;
-      print('User Document ID: ${userDocId.value}');
-    } else {
-      print('Dokumen pengguna tidak ditemukan di Firestore');
+    try {
+      QuerySnapshot userDocs = await _firestore.collection('data_users').where('username', isEqualTo: currentUsername).get();
+      if (userDocs.docs.isNotEmpty) {
+        var userDoc = userDocs.docs.first;
+        userDocId.value = userDoc.id;
+        profilePictureUrl.value = userDoc['url_profile'] ?? '';
+        username.value = userDoc['username'] ?? '';
+        print('User Document ID: ${userDocId.value}');
+        print('Profile Picture URL: ${profilePictureUrl.value}');
+        print('Username: ${username.value}');
+      } else {
+        print('Dokumen pengguna tidak ditemukan di Firestore');
+      }
+    } catch (e) {
+      print('Error loading user profile: $e');
     }
   }
 
